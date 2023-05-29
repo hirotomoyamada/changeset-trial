@@ -85,7 +85,7 @@ const getLatestPr = async (): Promise<PullRequest> => {
     owner: 'hirotomoyamada',
     repo: 'changeset-trial',
     base: 'main',
-    head: 'changeset-trial:changeset-release/main',
+    head: 'hirotomoyamada:changeset-release/main',
     per_page: 1,
   });
 
@@ -98,7 +98,7 @@ const getMergedPrs = async (): Promise<PullRequests> => {
     owner: 'hirotomoyamada',
     repo: 'changeset-trial',
     base: 'main',
-    head: 'changeset-trial:changeset-release/main',
+    head: 'hirotomoyamada:changeset-release/main',
     per_page: 100,
   });
 
@@ -176,9 +176,12 @@ const syncByNumber = async (prNumber: number): Promise<void> => {
 
 const syncLatest = async (): Promise<void> => {
   const pr = await getLatestPr();
-  const data = getPrData(pr);
 
-  if (data) await updateFiles(data);
+  console.log(pr);
+
+  // const data = getPrData(pr);
+
+  // if (data) await updateFiles(data);
 };
 
 const arg = process.argv[2] ?? '';
