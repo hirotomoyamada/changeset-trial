@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "changelog": "tsx scripts/changelog.ts",
+    "changelog:latest": "tsx scripts/changelog.ts --latest",
+    "changelog:commit": "git add . && git commit -am 'docs: add changelog' && git push"
   },
   "keywords": [],
   "author": "",
