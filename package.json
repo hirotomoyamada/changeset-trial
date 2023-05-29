@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "version": "changeset version",
+    "release": "changeset publish",
+    "version:dev": "changeset version --snapshot dev",
+    "release:dev": "changeset publish --tag dev",
     "changelog": "tsx scripts/changelog.ts",
     "changelog:latest": "tsx scripts/changelog.ts --latest",
     "changelog:commit": "git add . && git commit -am 'docs: add changelog' && git push"
