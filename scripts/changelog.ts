@@ -22,12 +22,16 @@ const dateFormatOptions: Intl.DateTimeFormatOptions = {
 };
 
 const getPrData = ({
-  body: content = '',
+  body: content,
   merged_at,
   updated_at,
   number: id,
   html_url: url,
-}: Omit<PullRequest, 'body'> & { body: string | undefined }): PrData => {
+}: PullRequest): PrData | undefined => {
+  if (!content) return;
+
+  content ??= '';
+
   const parts = content.split('# Releases');
   content = parts[1] || content;
 
@@ -167,14 +171,14 @@ const updateFiles = async (data: PrData): Promise<void> => {
 const syncByNumber = async (prNumber: number): Promise<void> => {
   const data = getPrData(await getPrByNumber(prNumber));
 
-  await updateFiles(data);
+  if (data) await updateFiles(data);
 };
 
 const syncLatest = async (): Promise<void> => {
   const pr = await getLatestPr();
   const data = getPrData(pr);
 
-  await updateFiles(data);
+  if (data) await updateFiles(data);
 };
 
 const arg = process.argv[2] ?? '';
