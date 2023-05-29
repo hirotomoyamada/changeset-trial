@@ -37,11 +37,11 @@ jobs:
         with:
           publish: pnpm release
           commit: 'ci(changesets): version packages'
-          setupGitUser: false
+          setupGitUser: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.HIROTOMO_YAMADA_PAT }}
 
       - name: Create @dev release
         if: steps.changesets.outputs.published != 'true'

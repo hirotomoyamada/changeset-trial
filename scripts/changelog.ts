@@ -40,7 +40,7 @@ const getPrData = ({
     dateFormatOptions,
   );
 
-  const match = content.match(/## @changeset-trial\/react\@(?<version>\d.+)/);
+  const match = content.match(/## @changeset-trial\/c\@(?<version>\d.+)/);
   const version = match?.groups?.version;
 
   const sanitized = content
