@@ -98,7 +98,7 @@ const getMergedPrs = async (): Promise<PullRequests> => {
     per_page: 100,
   });
 
-  return (data as PullRequests[]).filter(({ merged_at }) => merged_at);
+  return (data as PullRequests).filter(({ merged_at }) => merged_at);
 };
 
 const writePrFile = async ({ version, body }: PrData): Promise<void> => {
