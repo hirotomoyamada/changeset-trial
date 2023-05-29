@@ -36,7 +36,7 @@ const getPrData = ({
     dateFormatOptions,
   );
 
-  const match = content.match(/## @yamada-ui\/react\@(?<version>\d.+)/);
+  const match = content.match(/## @changeset-trial\/react\@(?<version>\d.+)/);
   const version = match?.groups?.version;
 
   const sanitized = content
@@ -53,7 +53,7 @@ const getPrData = ({
   const body = [
     '---',
     `title: Version ${version}`,
-    `description: Explore the changelog for Yamada UI version ${version}. Learn about the latest features, bug fixes, and improvements.`,
+    `description: Explore the changelog for Changeset trial version ${version}. Learn about the latest features, bug fixes, and improvements.`,
     `releaseUrl: ${url}`,
     `releaseDate: ${date}`,
     `version: ${version}`,
@@ -68,7 +68,7 @@ const getPrData = ({
 const getPrByNumber = async (pull_number: number): Promise<PullRequest> => {
   const { data } = await octokit.pulls.get({
     owner: 'hirotomoyamada',
-    repo: 'yamada-ui',
+    repo: 'changeset-trial',
     pull_number,
   });
 
@@ -79,9 +79,9 @@ const getLatestPr = async (): Promise<PullRequest> => {
   const { data } = await octokit.pulls.list({
     state: 'closed',
     owner: 'hirotomoyamada',
-    repo: 'yamada-ui',
+    repo: 'changeset-trial',
     base: 'main',
-    head: 'yamada-ui:changeset-release/main',
+    head: 'changeset-trial:changeset-release/main',
     per_page: 1,
   });
 
@@ -92,9 +92,9 @@ const getMergedPrs = async (): Promise<PullRequests> => {
   const { data } = await octokit.pulls.list({
     state: 'all',
     owner: 'hirotomoyamada',
-    repo: 'yamada-ui',
+    repo: 'changeset-trial',
     base: 'main',
-    head: 'yamada-ui:changeset-release/main',
+    head: 'changeset-trial:changeset-release/main',
     per_page: 100,
   });
 
