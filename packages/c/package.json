@@ -1,6 +1,6 @@
 {
-  "name": "@changeset-trial/b",
-  "version": "1.0.1",
+  "name": "@changeset-trial/c",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@changeset-trial/a": "workspace:*"
+    "@changeset-trial/a": "workspace:*",
+    "@changeset-trial/b": "workspace:*"
   }
 }
