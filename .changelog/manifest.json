@@ -2,6 +2,13 @@
   {
     "id": 37,
     "url": "https://github.com/hirotomoyamada/changeset-trial/pull/37",
+    "body": "---\ntitle: Version 1.0.4\ndescription: Explore the changelog for Changeset trial version 1.0.4. Learn about the latest features, bug fixes, and improvements.\nreleaseUrl: https://github.com/hirotomoyamada/changeset-trial/pull/37\nreleaseDate: May 30, 2023\nversion: 1.0.4\n---\n\n## changeset-trial-a@1.1.6\n\n### Patch Changes\n\n-   [#36](https://github.com/hirotomoyamada/changeset-trial/pull/36) [`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.\n\n## changeset-trial-b@1.0.5\n\n### Patch Changes\n\n-   Updated dependencies \\[[`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69)]:\n    -   changeset-trial-a@1.1.6\n\n## changeset-trial-c@1.0.4\n\n### Patch Changes\n\n-   Updated dependencies \\[[`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69)]:\n    -   changeset-trial-a@1.1.6\n    -   changeset-trial-b@1.0.5\n",
+    "date": "May 30, 2023",
+    "version": "1.0.4"
+  },
+  {
+    "id": 37,
+    "url": "https://github.com/hirotomoyamada/changeset-trial/pull/37",
     "body": "---\ntitle: Version 1.0.4\ndescription: Explore the changelog for Changeset trial version 1.0.4. Learn about the latest features, bug fixes, and improvements.\nreleaseUrl: https://github.com/hirotomoyamada/changeset-trial/pull/37\nreleaseDate: 2023年5月30日\nversion: 1.0.4\n---\n\n## changeset-trial-a@1.1.6\n\n### Patch Changes\n\n-   [#36](https://github.com/hirotomoyamada/changeset-trial/pull/36) [`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.\n\n## changeset-trial-b@1.0.5\n\n### Patch Changes\n\n-   Updated dependencies \\[[`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69)]:\n    -   changeset-trial-a@1.1.6\n\n## changeset-trial-c@1.0.4\n\n### Patch Changes\n\n-   Updated dependencies \\[[`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69)]:\n    -   changeset-trial-a@1.1.6\n    -   changeset-trial-b@1.0.5\n",
     "date": "2023年5月30日",
     "version": "1.0.4"

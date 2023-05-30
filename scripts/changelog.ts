@@ -15,12 +15,6 @@ export type PrData = {
 
 const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
-const dateFormatOptions: Intl.DateTimeFormatOptions = {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-};
-
 const getPrData = ({
   body: content,
   merged_at,
@@ -35,10 +29,11 @@ const getPrData = ({
   const parts = content.split('# Releases');
   content = parts[1] || content;
 
-  const date = new Date(merged_at ?? updated_at).toLocaleDateString(
-    'ja-JP',
-    dateFormatOptions,
-  );
+  const date = new Date(merged_at ?? updated_at).toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
 
   const match = content.match(/## changeset-trial-c\@(?<version>\d.+)/);
   const version = match?.groups?.version;
@@ -112,11 +107,13 @@ const writePrFile = async ({ version, body }: PrData): Promise<void> => {
 
 export const manifest = {
   path: '.changelog/manifest.json',
+
   async write(data: PrData[]) {
     data = data.sort((a, b) => b.id - a.id);
 
     return fs.promises.writeFile(this.path, JSON.stringify(data, null, 2));
   },
+
   async read(): Promise<PrData[]> {
     try {
       return JSON.parse(await fs.promises.readFile(this.path, 'utf8'));
@@ -124,6 +121,7 @@ export const manifest = {
       return [];
     }
   },
+
   async update(data: PrData) {
     const prevData = await this.read();
 
