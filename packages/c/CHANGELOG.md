@@ -4,6 +4,14 @@
 
 ### Patch Changes
 
+- Updated dependencies [[`83a3c8f`](https://github.com/hirotomoyamada/changeset-trial/commit/83a3c8fcfc19e48bacb6b3bed1696fadc57371e3), [`fbb53aa`](https://github.com/hirotomoyamada/changeset-trial/commit/fbb53aa2eb77e9104c5f1ab7cb9f613114824907), [`141d1fe`](https://github.com/hirotomoyamada/changeset-trial/commit/141d1fe9e79c37985917d78c1f0b4dfbfd5a8c46)]:
+  - changeset-trial-a@1.1.4
+  - changeset-trial-b@1.0.3
+
+## 1.0.2
+
+### Patch Changes
+
 - Updated dependencies [[`e96ac42`](https://github.com/hirotomoyamada/changeset-trial/commit/e96ac42ccc04e3ce1ed6a97f754ea0106ef7ed8c), [`0acd735`](https://github.com/hirotomoyamada/changeset-trial/commit/0acd735bd8c02d4b808d6cde775e3f8ac3aa61ec), [`441f686`](https://github.com/hirotomoyamada/changeset-trial/commit/441f686b387247f90a9759bcc009fc171ade4eee)]:
   - @changeset-trial/a@1.1.2
   - @changeset-trial/b@1.0.3
