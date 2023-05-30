@@ -1,5 +1,13 @@
 # @changeset-trial/c
 
+## 1.0.4
+
+### Patch Changes
+
+- Updated dependencies [[`aba9244`](https://github.com/hirotomoyamada/changeset-trial/commit/aba9244e401861b828319f38f236cbd4b769de69)]:
+  - changeset-trial-a@1.1.6
+  - changeset-trial-b@1.0.5
+
 ## 1.0.3
 
 ### Patch Changes
