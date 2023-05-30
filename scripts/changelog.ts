@@ -143,7 +143,7 @@ const writeReadme = async (): Promise<void> => {
     '# Changelog\n',
     '## Latest Release\n',
     latest,
-    '## Previous Releases\n',
+    '\n## Previous Releases\n',
     ...others,
   ].join('\n');
 
