@@ -1,5 +1,14 @@
 # @changeset-trial/b
 
+## 1.0.6
+
+### Patch Changes
+
+- [#40](https://github.com/hirotomoyamada/changeset-trial/pull/40) [`0e4ee0b`](https://github.com/hirotomoyamada/changeset-trial/commit/0e4ee0b8858f3a490deb18662cd6b9d6a3bf4779) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
+- Updated dependencies [[`fe337b8`](https://github.com/hirotomoyamada/changeset-trial/commit/fe337b863c72176d6bdc99b9e9ced4588f22fa94)]:
+  - changeset-trial-a@1.1.7
+
 ## 1.0.5
 
 ### Patch Changes
