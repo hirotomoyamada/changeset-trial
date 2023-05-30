@@ -4,6 +4,12 @@
 
 ### Patch Changes
 
+- [#27](https://github.com/hirotomoyamada/changeset-trial/pull/27) [`941ede0`](https://github.com/hirotomoyamada/changeset-trial/commit/941ede05fdf2bf74bb5159ba16df9b116c08bd40) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
+## 1.1.2
+
+### Patch Changes
+
 - [#24](https://github.com/hirotomoyamada/changeset-trial/pull/24) [`e96ac42`](https://github.com/hirotomoyamada/changeset-trial/commit/e96ac42ccc04e3ce1ed6a97f754ea0106ef7ed8c) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
 
 - [#23](https://github.com/hirotomoyamada/changeset-trial/pull/23) [`0acd735`](https://github.com/hirotomoyamada/changeset-trial/commit/0acd735bd8c02d4b808d6cde775e3f8ac3aa61ec) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
