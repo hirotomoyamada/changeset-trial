@@ -62,7 +62,6 @@ const getPrData = ({
     `releaseDate: ${date}`,
     `version: ${version}`,
     '---',
-    '\n',
     `${sanitized}`,
   ].join('\n');
 
@@ -138,19 +137,17 @@ const writeReadme = async (): Promise<void> => {
     ({ date, version }) =>
       `### ${date}: [v${version}](/.changelog/v${version}.mdx)`,
   );
-  const [latestRelease, ...otherReleases] = sortedData;
+  const [latest, ...others] = sortedData;
 
-  const readme = [
-    '# Changelog',
-    '\n',
-    '## Latest Release',
-    latestRelease,
-    '\n',
-    '## Previous Releases',
-    ...otherReleases,
+  const body = [
+    '# Changelog\n',
+    '## Latest Release\n',
+    latest,
+    '## Previous Releases\n',
+    ...others,
   ].join('\n');
 
-  await fs.promises.writeFile('CHANGELOG.md', readme);
+  await fs.promises.writeFile('CHANGELOG.md', body);
 };
 
 const sync = async (): Promise<void> => {
@@ -164,7 +161,9 @@ const sync = async (): Promise<void> => {
 
 const updateFiles = async (data: PrData): Promise<void> => {
   await writePrFile(data);
+
   await manifest.update(data);
+
   await writeReadme();
 };
 
@@ -177,11 +176,9 @@ const syncByNumber = async (prNumber: number): Promise<void> => {
 const syncLatest = async (): Promise<void> => {
   const pr = await getLatestPr();
 
-  console.log(pr);
+  const data = getPrData(pr);
 
-  // const data = getPrData(pr);
-
-  // if (data) await updateFiles(data);
+  if (data) await updateFiles(data);
 };
 
 const arg = process.argv[2] ?? '';
