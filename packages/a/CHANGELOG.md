@@ -1,5 +1,11 @@
 # @changeset-trial/a
 
+## 1.1.5
+
+### Patch Changes
+
+- [`c99983b`](https://github.com/hirotomoyamada/changeset-trial/commit/c99983ba84545a0111daa50a0dd2cab878c5c562) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
 ## 1.1.4
 
 ### Patch Changes
