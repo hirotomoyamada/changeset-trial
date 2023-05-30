@@ -1,5 +1,11 @@
 # @changeset-trial/a
 
+## 1.1.3
+
+### Patch Changes
+
+- [#29](https://github.com/hirotomoyamada/changeset-trial/pull/29) [`ada2006`](https://github.com/hirotomoyamada/changeset-trial/commit/ada20061ab000754b9fd09625851bfa0abdd8878) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
 ## 1.1.2
 
 ### Patch Changes
