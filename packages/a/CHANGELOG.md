@@ -1,5 +1,15 @@
 # @changeset-trial/a
 
+## 1.1.2
+
+### Patch Changes
+
+- [#24](https://github.com/hirotomoyamada/changeset-trial/pull/24) [`e96ac42`](https://github.com/hirotomoyamada/changeset-trial/commit/e96ac42ccc04e3ce1ed6a97f754ea0106ef7ed8c) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
+- [#23](https://github.com/hirotomoyamada/changeset-trial/pull/23) [`0acd735`](https://github.com/hirotomoyamada/changeset-trial/commit/0acd735bd8c02d4b808d6cde775e3f8ac3aa61ec) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
+- [#25](https://github.com/hirotomoyamada/changeset-trial/pull/25) [`441f686`](https://github.com/hirotomoyamada/changeset-trial/commit/441f686b387247f90a9759bcc009fc171ade4eee) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
 ## 1.1.1
 
 ### Patch Changes
