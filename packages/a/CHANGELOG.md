@@ -1,5 +1,11 @@
 # @changeset-trial/a
 
+## 0.0.0-next-20230530114701
+
+### Major Changes
+
+- This is test.
+
 ## 1.1.7
 
 ### Patch Changes

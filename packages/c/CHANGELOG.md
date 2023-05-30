@@ -1,5 +1,13 @@
 # @changeset-trial/c
 
+## 0.0.0-next-20230530114701
+
+### Patch Changes
+
+- Updated dependencies []:
+  - changeset-trial-a@0.0.0-next-20230530114701
+  - changeset-trial-b@0.0.0-next-20230530114701
+
 ## 1.0.5
 
 ### Patch Changes
