@@ -1,5 +1,16 @@
 # @changeset-trial/b
 
+## 0.0.0
+
+### Major Changes
+
+- This is test.
+
+### Patch Changes
+
+- Updated dependencies []:
+  - changeset-trial-a@0.0.0
+
 ## 0.0.0-next-20230530114701
 
 ### Patch Changes
