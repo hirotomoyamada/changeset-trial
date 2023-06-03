@@ -47,7 +47,7 @@ jobs:
         shell: bash
         # if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/')
         run: |
-          echo ${{ steps.is_changed-files }}
+          echo ${{ toJSON(steps.is_changed-files) }}
 
       - name: Setup Git User
         shell: bash
