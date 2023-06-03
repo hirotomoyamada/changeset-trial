@@ -1,0 +1,8 @@
+[
+  {
+    "id": 42,
+    "url": "https://github.com/hirotomoyamada/changesets-trial/pull/42",
+    "body": "---\ntitle: Version undefined\ndescription: Explore the changelog for Changeset trial version undefined. Learn about the latest features, bug fixes, and improvements.\nreleaseUrl: https://github.com/hirotomoyamada/changesets-trial/pull/42\nreleaseDate: June 3, 2023\nversion: undefined\n---\n\n## @hirotomoyamada/changeset-trial-a@0.1.2\n\n### Patch Changes\n\n-   [`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.\n\n## @hirotomoyamada/changeset-trial-b@0.1.2\n\n### Patch Changes\n\n-   [`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.\n\n-   Updated dependencies \\[[`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183)]:\n    -   @hirotomoyamada/changeset-trial-a@0.1.2\n\n## @hirotomoyamada/changeset-trial-c@2.0.2\n\n### Patch Changes\n\n-   [`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.\n\n-   Updated dependencies \\[[`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183)]:\n    -   @hirotomoyamada/changeset-trial-a@0.1.2\n    -   @hirotomoyamada/changeset-trial-b@0.1.2\n",
+    "date": "June 3, 2023"
+  }
+]
