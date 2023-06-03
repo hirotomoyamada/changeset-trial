@@ -38,7 +38,9 @@ jobs:
       - name: Test ignore
         # if: contains(github.event.head_commit.modified, 'ignore/')
         run: |
-          echo ${{ toJSON(github.event) }}
+          echo ${{ toJSON(github) }}
+          echo ${{ toJSON(steps) }}
+          echo ${{ toJSON(needs) }}
 
       - name: Setup Git User
         shell: bash
