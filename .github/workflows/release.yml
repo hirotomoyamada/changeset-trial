@@ -5,6 +5,7 @@ on:
     paths:
       - '.changeset/**'
       - 'packages/**'
+      - 'ignore/**'
     branches:
       - main
 
@@ -33,6 +34,11 @@ jobs:
           node-version-file: '.nvmrc'
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
+
+      - name: Test ignore
+        if: contains(github.event.head_commit.modified, 'ignore/')
+        run: |
+          echo success
 
       - name: Setup Git User
         shell: bash
