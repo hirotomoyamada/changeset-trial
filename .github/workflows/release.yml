@@ -36,7 +36,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Get changed files
-        id: is_changed-files
+        id: changed-files-specific
         uses: tj-actions/changed-files@v36
         with:
           files: |
@@ -44,9 +44,9 @@ jobs:
             packages/**
 
       - name: Test ignore
-        shell: bash
+        if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
-          echo ${{ toJSON(steps.is_changed-files) }}
+          echo "has changed."
 
       - name: Setup Git User
         shell: bash
