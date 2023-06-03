@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "changeset-trial-a": "workspace:*"
+    "@hirotomoyamada/changeset-trial-a": "workspace:*"
   }
 }
