@@ -42,7 +42,7 @@ jobs:
       - name: Test ignore
         # if: contains(github.event.head_commit.modified, 'ignore/')
         run: |
-          echo ${{ toJSON(steps.changed-files.outputs.all_modified_files) }}
+          echo ${{ toJSON(steps.changed-files) }}
 
       - name: Setup Git User
         shell: bash
