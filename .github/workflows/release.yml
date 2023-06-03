@@ -36,9 +36,9 @@ jobs:
           cache: 'pnpm'
 
       - name: Test ignore
-        if: contains(github.event.head_commit.modified, 'ignore/')
+        # if: contains(github.event.head_commit.modified, 'ignore/')
         run: |
-          echo success
+          echo github.event.head_commit.modified
 
       - name: Setup Git User
         shell: bash
