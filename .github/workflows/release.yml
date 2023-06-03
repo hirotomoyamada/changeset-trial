@@ -41,7 +41,7 @@ jobs:
 
       - name: Test ignore
         shell: bash
-        if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/') == 'true'
+        if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/')
         run: |
           echo true
 
