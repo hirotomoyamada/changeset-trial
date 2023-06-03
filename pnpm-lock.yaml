@@ -37,16 +37,16 @@ importers:
 
   packages/b:
     dependencies:
-      changeset-trial-a:
+      '@hirotomoyamada/changeset-trial-a':
         specifier: workspace:*
         version: link:../a
 
   packages/c:
     dependencies:
-      changeset-trial-a:
+      '@hirotomoyamada/changeset-trial-a':
         specifier: workspace:*
         version: link:../a
-      changeset-trial-b:
+      '@hirotomoyamada/changeset-trial-b':
         specifier: workspace:*
         version: link:../b
 
