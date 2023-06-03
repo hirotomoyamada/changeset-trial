@@ -1,5 +1,15 @@
 # @hirotomoyamada/changeset-trial-c
 
+## 2.0.2
+
+### Patch Changes
+
+- [`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183) Thanks [@hirotomoyamada](https://github.com/hirotomoyamada)! - This is test.
+
+- Updated dependencies [[`9bbca6b`](https://github.com/hirotomoyamada/changesets-trial/commit/9bbca6b58af1296a363c2046e36521775af6a183)]:
+  - @hirotomoyamada/changeset-trial-a@0.1.2
+  - @hirotomoyamada/changeset-trial-b@0.1.2
+
 ## 2.0.1
 
 ### Patch Changes
