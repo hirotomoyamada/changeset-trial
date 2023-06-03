@@ -43,10 +43,10 @@ jobs:
             .changeset/**
             packages/**
 
-      - name: Test ignore
-        if: steps.changed-files-specific.outputs.any_changed == 'true'
+      - name: Test
+        # if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
-          echo "has changed."
+          echo ${{ toJSON(github) }}
 
       - name: Setup Git User
         shell: bash
