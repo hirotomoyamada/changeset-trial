@@ -37,11 +37,11 @@ jobs:
 
       - name: Get changed files
         id: changed-files
-        uses: trilom/file-changes-action@v1.2.3
+        uses: tj-actions/changed-files@v10.1
 
       - name: Test ignore
         shell: bash
-        if: contains(steps.changed-files.outputs.files, 'ignore/') == 'true'
+        if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/') == 'true'
         run: |
           echo true
 
