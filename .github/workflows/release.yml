@@ -36,14 +36,18 @@ jobs:
           cache: 'pnpm'
 
       - name: Get changed files
-        id: changed-files
-        uses: tj-actions/changed-files@v10.1
+        id: is_changed-files
+        uses: tj-actions/changed-files@v36
+        with:
+          files_ignore: |
+            ./changeset/**
+            packages/**
 
       - name: Test ignore
         shell: bash
-        if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/')
+        # if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/')
         run: |
-          echo true
+          echo ${{ steps.is_changed-files }}
 
       - name: Setup Git User
         shell: bash
