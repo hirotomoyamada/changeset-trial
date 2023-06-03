@@ -41,13 +41,9 @@ jobs:
 
       - name: Test ignore
         shell: bash
-        # if: [[ ' ${steps.file_changes.outputs.files[*]} ' =~ 'ignore/'* ]] == 'true'
+        if: contains(steps.changed-files.outputs.files, 'ignore/') == 'true'
         run: |
-          if [[ ' ${steps.file_changes.outputs.files[*]} ' =~ 'ignore/'* ]] == 'true'
-          then
-            echo 'true'
-          else
-            echo 'false'
+          echo true
 
       - name: Setup Git User
         shell: bash
