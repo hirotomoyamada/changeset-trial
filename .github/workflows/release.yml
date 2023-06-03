@@ -39,13 +39,12 @@ jobs:
         id: is_changed-files
         uses: tj-actions/changed-files@v36
         with:
-          files_ignore: |
-            ./changeset/**
+          files: |
+            .changeset/**
             packages/**
 
       - name: Test ignore
         shell: bash
-        # if: contains(steps.changed-files.outputs.all_modified_files, 'ignore/')
         run: |
           echo ${{ toJSON(steps.is_changed-files) }}
 
