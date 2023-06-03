@@ -35,12 +35,14 @@ jobs:
           registry-url: 'https://registry.npmjs.org'
           cache: 'pnpm'
 
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v10.1
+
       - name: Test ignore
         # if: contains(github.event.head_commit.modified, 'ignore/')
         run: |
-          echo ${{ toJSON(github) }}
-          echo ${{ toJSON(steps) }}
-          echo ${{ toJSON(needs) }}
+          echo ${{ toJSON(steps.changed-files.outputs.all_modified_files) }}
 
       - name: Setup Git User
         shell: bash
