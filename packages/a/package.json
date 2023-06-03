@@ -1,6 +1,6 @@
 {
-  "name": "changeset-trial-a",
-  "version": "2.0.0",
+  "name": "@hirotomoyamada/changeset-trial-a",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
