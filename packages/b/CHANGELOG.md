@@ -1,5 +1,12 @@
 # @hirotomoyamada/changeset-trial-b
 
+## 0.1.4
+
+### Patch Changes
+
+- Updated dependencies [[`df26fa3`](https://github.com/hirotomoyamada/changesets-trial/commit/df26fa3d0a4226ecb8f1655094a415cee8ed47e1)]:
+  - @hirotomoyamada/changeset-trial-a@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes
