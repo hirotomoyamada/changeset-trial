@@ -1,5 +1,13 @@
 # @hirotomoyamada/changeset-trial-c
 
+## 2.0.5
+
+### Patch Changes
+
+- Updated dependencies [[`dbd34e4`](https://github.com/hirotomoyamada/changesets-trial/commit/dbd34e459756baf65c458f5077c1c647816b5694)]:
+  - @hirotomoyamada/changeset-trial-a@0.1.5
+  - @hirotomoyamada/changeset-trial-b@0.1.5
+
 ## 2.0.4
 
 ### Patch Changes
