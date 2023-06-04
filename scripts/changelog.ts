@@ -35,7 +35,9 @@ const getPrData = ({
     day: 'numeric',
   });
 
-  const match = content.match(/## changeset-trial-c\@(?<version>\d.+)/);
+  const match = content.match(
+    /## @hirotomoyamada\/changeset-trial-c\@(?<version>\d.+)/,
+  );
   const version = match?.groups?.version;
 
   const sanitized = content
