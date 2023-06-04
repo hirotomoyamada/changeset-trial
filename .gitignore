@@ -12,6 +12,7 @@ dist
 .DS_Store
 *.pem
 .vscode
+.env
 
 # debug
 logs

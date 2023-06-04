@@ -46,7 +46,7 @@ jobs:
       - name: Test
         # if: steps.changed-files-specific.outputs.any_changed == 'true'
         run: |
-          echo ${{ toJSON(github) }}
+          echo "has changed."
 
       - name: Setup Git User
         shell: bash
@@ -91,3 +91,9 @@ jobs:
         run: |
           pnpm changelog:latest
           pnpm changelog:commit
+
+      - name: Mattermost notification
+        if: steps.changesets.outputs.published == 'true'
+        run: pnpm release:mattermost
+        env:
+          MATTERMOST_WEBHOOK_URL: ${{ secrets.MATTERMOST_WEBHOOK_URL }}
