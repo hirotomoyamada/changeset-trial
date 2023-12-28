@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -42,22 +42,7 @@ importers:
         specifier: ^5.0.4
         version: 5.0.4
 
-  packages/a: {}
-
-  packages/b:
-    dependencies:
-      '@hirotomoyamada/changeset-trial-a':
-        specifier: workspace:*
-        version: link:../a
-
-  packages/c:
-    dependencies:
-      '@hirotomoyamada/changeset-trial-a':
-        specifier: workspace:*
-        version: link:../a
-      '@hirotomoyamada/changeset-trial-b':
-        specifier: workspace:*
-        version: link:../b
+  packages/changesets-trial: {}
 
 packages:
 
